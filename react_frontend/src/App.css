@@ -1,0 +1,145 @@
+/* General Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form Card (Neumorphic Style) */
+.form-card {
+  background: #f0f0f3;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px #d9d9d9, -20px -20px 50px #ffffff;
+  margin-bottom: 50px;
+}
+
+/* Title Styling */
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.form-group input {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f0f0f3;
+  box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  background: #fff;
+  box-shadow: inset 2px 2px 5px #d9d9d9, inset -2px -2px 5px #ffffff;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px #d1d1d1, -5px -5px 15px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+  box-shadow: 3px 3px 8px #c9c9c9, -3px -3px 8px #ffffff;
+}
+
+/* User List Table */
+.user-list-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+}
+
+.user-table th {
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-table td {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .user-table th,
+  .user-table td {
+    font-size: 0.9rem;
+  }
+}
